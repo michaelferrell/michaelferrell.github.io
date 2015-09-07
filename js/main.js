@@ -20,7 +20,7 @@
     ArtWork.prototype.appendAll = function() {
         for (var i = 0; i < this.art_work.length; i++) {
             var art_work = this.art_work[i]
-            $(".container").append(
+            $("#art").append(
                 '<article class="art-piece" data-action="zoom">'
                 +   '<img src="' + art_work.src + '" alt="' + art_work.name + '" />'
                 +   '<p class="piece-name">' + art_work.name + '</p>'

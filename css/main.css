@@ -76,15 +76,20 @@ img {
     text-align: center;
 }
 .title-prim {
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: #7ad4ce;
     font-weight: 700;
     margin-bottom: 0;
 }
 .title-sec {
-    font-size: 1.1rem;
-    color: #383838;
-    font-weight: 400;
+    font-size: 1rem;
+    color: #325856;
+    font-weight: 300;
+    display: inline-block;
+    background-color: rgba(122, 212, 206, .3);
+    padding: 0 4px;
+    border-radius: 3px;
+    margin-top: 10px;
 }
 .intro-me {
     width: 110px;

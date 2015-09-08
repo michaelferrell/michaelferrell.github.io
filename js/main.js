@@ -5,7 +5,7 @@
     */
     function ArtWork () {
         this.art_work = [
-            {'name': 'Graffiti Sunset','src': 'images/graffiti_sunset.jpg', 'size': '12" X 24"'},
+            {'name': 'Graffiti Sunrise','src': 'images/graffiti_sunset.jpg', 'size': '12" X 24"'},
             {'name': 'Eruption','src': 'images/eruption.jpg', 'size': '12" X 24"'},
             {'name': 'Fierce River','src': 'images/violent_waterfall.jpg', 'size': '18" X 24"'},
             {'name': 'Core Temper','src': 'images/earths_shake.jpg', 'size': '12" X 24"'},
@@ -13,8 +13,8 @@
             {'name': 'Slang For Movement','src': 'images/slang_for_movement.jpg', 'size': '11" X 14"'},
             {'name': 'Rough Day','src': 'images/busy_splatters.jpg', 'size': '18" X 24"'},
             {'name': 'Green Heavy','src': 'images/green_heavy.jpg', 'size': '12" X 24"'},
-            {'name': 'Thirsty Pup','src': 'images/hungry_dog.jpg', 'size': '12" X 16"'},
-            {'name': 'Flowers For Ma','src': 'images/moms_flowers.jpg', 'size': '18" X 24"'}
+            {'name': 'Thirsty Dog','src': 'images/hungry_dog.jpg', 'size': '12" X 16"'},
+            {'name': 'Some Tulipds','src': 'images/moms_flowers.jpg', 'size': '18" X 24"'}
         ];
     }
 

@@ -143,6 +143,15 @@ img {
     .container {
         margin: 40px auto;
     }
+.piece-name {
+    font-size: 1.05rem;
+    border-left: 3px solid #7ad4ce;
+    padding-left: 8px;
+}
+.piece-size {
+    font-size: .95rem;
+    margin-left: 15px;
+}
 }
 .footer-link {
     color: #325856

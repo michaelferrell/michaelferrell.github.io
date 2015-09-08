@@ -72,6 +72,9 @@ img {
 .container {
     margin: 70px auto;
 }
+.header-wrap {
+    text-align: center;
+}
 .title-prim {
     font-size: 1.8rem;
     color: #7ad4ce;
@@ -89,6 +92,7 @@ img {
     border-radius: 100%;
     overflow: hidden;
     border: 5px solid #7ad4ce;
+    margin: 0 auto;
     transition: .3s all;
 }
 .intro-me:hover {

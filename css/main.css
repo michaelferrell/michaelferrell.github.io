@@ -154,6 +154,9 @@ img {
         margin-top: 35px;
         padding: 0px;
     }
+    .art-piece img {
+        margin-bottom: 0;
+    }
     .piece-name {
         font-size: 1.05rem;
         border-left: 3px solid #7ad4ce;

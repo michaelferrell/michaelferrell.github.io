@@ -104,6 +104,12 @@ img {
 .section-title {
     font-size: 1.4rem;
     font-weight: 600;
+    margin-bottom: 0;
+}
+.sub-desc {
+    color: #999;
+    font-weight: 400;
+    margin-top: 7px;
 }
 .art-piece {
     margin-top: 35px;

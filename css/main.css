@@ -141,6 +141,9 @@ img {
     }
 }
 @media(max-width: 767px) {
+    body {
+        background-color: #fff;
+    }
     .container {
         width: 90%;
     }
@@ -149,7 +152,7 @@ img {
     }
     .art-piece {
         margin-top: 35px;
-        padding: 10px;
+        padding: 0px;
     }
     .piece-name {
         font-size: 1.05rem;

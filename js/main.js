@@ -9,6 +9,7 @@
             {'name': 'Eruption','src': 'images/eruption.jpg', 'size': '12" X 24"'},
             {'name': 'Fierce River','src': 'images/violent_waterfall.jpg', 'size': '18" X 24"'},
             {'name': 'Core Temper','src': 'images/earths_shake.jpg', 'size': '12" X 24"'},
+            {'name': 'R2-D2','src': 'images/robot.jpg', 'size': '9" X 14"'},
             {'name': 'Slang For Movement','src': 'images/slang_for_movement.jpg', 'size': '11" X 14"'},
             {'name': 'Rough Day','src': 'images/busy_splatters.jpg', 'size': '18" X 24"'},
             {'name': 'Green Heavy','src': 'images/green_heavy.jpg', 'size': '12" X 24"'},

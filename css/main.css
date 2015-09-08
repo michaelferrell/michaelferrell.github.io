@@ -72,7 +72,6 @@ img {
 .container {
     margin: 70px auto;
 }
-.header-wrap {}
 .title-prim {
     font-size: 1.8rem;
     color: #7ad4ce;
@@ -140,6 +139,9 @@ img {
 @media(max-width: 767px) {
     .container {
         width: 90%;
+    }
+    .container {
+        margin: 40px auto;
     }
 }
 .footer-link {

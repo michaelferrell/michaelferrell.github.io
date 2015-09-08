@@ -161,10 +161,12 @@ img {
         font-size: 1.05rem;
         border-left: 3px solid #7ad4ce;
         padding-left: 8px;
+        font-weight: 700;
     }
     .piece-size {
-        font-size: .95rem;
+        font-size: 1.05rem;
         margin-left: 15px;
+        float: right;
     }
 }
 .footer-link {

@@ -46,6 +46,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #212121;
     font-size: 16px;
+    background-color: #f5f5f5;
 }
 footer {
     background-color: #7ad4ce;
@@ -69,16 +70,14 @@ img {
     cursor: -moz-zoom-in;
 }
 .container {
-    margin: 90px auto;
+    margin: 70px auto;
 }
-.header-wrap {
-    text-align: center;
-}
+.header-wrap {}
 .title-prim {
     font-size: 1.8rem;
     color: #7ad4ce;
     font-weight: 700;
-    margin-bottom: 0
+    margin-bottom: 0;
 }
 .title-sec {
     font-size: 1.1rem;
@@ -90,7 +89,6 @@ img {
     height: 110px;
     border-radius: 100%;
     overflow: hidden;
-    margin: 0 auto;
     border: 5px solid #7ad4ce;
     transition: .3s all;
 }
@@ -105,19 +103,28 @@ img {
     font-weight: 600;
 }
 .art-piece {
-    margin-top: 30px;
-    padding-bottom: 10px;
-    border-bottom: 4px solid rgba(122, 212, 206, .2);
+    margin-top: 35px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 3px;
+}
+.art-piece img {
+    margin-bottom: 15px;
 }
 .piece-name {
-    font-size: 1.4rem;
+    display: inline-block;
+    font-size: 1.3rem;
+    color: #7ad4ce;
+    border-left: 3px solid #7ad4ce;
+    padding-left: 8px;
     margin-bottom: 0;
-    color: #7ad4ce
 }
 .piece-size {
-    color: #49494C;
+    display: inline-block;
+    color: #383838;
     font-size: .95rem;
     font-weight: 400;
+    margin-left: 25px;
 }
 @media(min-width: 1200px) {
     .container {

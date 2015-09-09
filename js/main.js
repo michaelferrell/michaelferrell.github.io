@@ -1,5 +1,8 @@
 +function ($) { "use strict";
 
+
+
+
     /**
     * List of art projects
     */

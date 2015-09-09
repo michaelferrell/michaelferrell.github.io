@@ -52,60 +52,60 @@
   }
 
   ZoomService.prototype._zoom = function (e) {
-    var target = e.target
+    var target = e.target;
 
-    if (!target || target.tagName != 'IMG') return
+    if (!target || target.tagName != 'IMG') return;
 
-    if (this._$body.hasClass('zoom-overlay-open')) return
+    if (this._$body.hasClass('zoom-overlay-open')) return;
 
     if (e.metaKey || e.ctrlKey) {
-      return window.open((e.target.getAttribute('data-original') || e.target.src), '_blank')
+      return window.open((e.target.getAttribute('data-original') || e.target.src), '_blank');
     }
 
-    if (target.width >= ($(window).width() - Zoom.OFFSET)) return
+    if (target.width >= ($(window).width() - Zoom.OFFSET)) return;
 
-    this._activeZoomClose(true)
+        this._activeZoomClose(true); // check if we need to close zoom
 
-    this._activeZoom = new Zoom(target)
-    this._activeZoom.zoomImage()
+        this._activeZoom = new Zoom(target); // create new zoom instance, pass in the clicked image
+        this._activeZoom.zoomImage();
 
-    // todo(fat): probably worth throttling this
-    this._$window.on('scroll.zoom', $.proxy(this._scrollHandler, this))
+        // todo(fat): probably worth throttling this
+        this._$window.on('scroll.zoom', $.proxy(this._scrollHandler, this))
 
-    this._$document.on('keyup.zoom', $.proxy(this._keyHandler, this))
-    this._$document.on('touchstart.zoom', $.proxy(this._touchStart, this))
+        this._$document.on('keyup.zoom', $.proxy(this._keyHandler, this))
+        this._$document.on('touchstart.zoom', $.proxy(this._touchStart, this))
 
-    // we use a capturing phase here to prevent unintended js events
-    // sadly no useCapture in jquery api (http://bugs.jquery.com/ticket/14953)
-    if (document.addEventListener) {
-      document.addEventListener('click', this._boundClick, true)
-    } else {
-      document.attachEvent('onclick', this._boundClick, true)
-    }
+        // we use a capturing phase here to prevent unintended js events
+        // sadly no useCapture in jquery api (http://bugs.jquery.com/ticket/14953)
+        if (document.addEventListener) {
+            document.addEventListener('click', this._boundClick, true)
+        } else {
+            document.attachEvent('onclick', this._boundClick, true)
+        }
 
     if ('bubbles' in e) {
-      if (e.bubbles) e.stopPropagation()
+        if (e.bubbles) e.stopPropagation();
     } else {
-      // Internet Explorer before version 9
-      e.cancelBubble = true
+        // Internet Explorer before version 9
+        e.cancelBubble = true;
     }
   }
 
   ZoomService.prototype._activeZoomClose = function (forceDispose) {
-    if (!this._activeZoom) return
+    if (!this._activeZoom) return; // is null - cant close if we are in the process of zooming in!
 
-    if (forceDispose) {
-      this._activeZoom.dispose()
-    } else {
-      this._activeZoom.close()
+    if (forceDispose) { 
+      this._activeZoom.dispose();
+    } else { // forceDispose is undefined when closing
+      this._activeZoom.close();
     }
 
-    this._$window.off('.zoom')
-    this._$document.off('.zoom')
+    this._$window.off('.zoom');
+    this._$document.off('.zoom');
 
-    document.removeEventListener('click', this._boundClick, true)
+    document.removeEventListener('click', this._boundClick, true);
 
-    this._activeZoom = null
+    this._activeZoom = null;
   }
 
   ZoomService.prototype._scrollHandler = function (e) {
@@ -145,53 +145,54 @@
   }
 
 
-  /**
-   * The zoom object
-   */
-  function Zoom (img) {
-    this._fullHeight      =
-    this._fullWidth       =
-    this._overlay         =
-    this._targetImageWrap = null
+    /**
+    * The zoom object
+    */
+    function Zoom (img) {
+        this._fullHeight      = null;
+        this._fullWidth       = null;
+        this._overlay         = null;
+        this._targetImageWrap = null;
 
-    this._targetImage = img
+        this._targetImage = img;
 
-    this._$body = $(document.body)
-  }
+        this._$body = $(document.body);
+    }
 
-  Zoom.OFFSET = 80
-  Zoom._MAX_WIDTH = 2560
-  Zoom._MAX_HEIGHT = 4096
+    Zoom.OFFSET = 80
+    Zoom._MAX_WIDTH = 2560
+    Zoom._MAX_HEIGHT = 4096
 
-  Zoom.prototype.zoomImage = function () {
-    var img = document.createElement('img')
-    img.onload = $.proxy(function () {
-      this._fullHeight = Number(img.height)
-      this._fullWidth = Number(img.width)
-      this._zoomOriginal()
-    }, this)
-    img.src = this._targetImage.src
-  }
+    Zoom.prototype.zoomImage = function () {
+        var img = document.createElement('img');
+        console.log(img)
+        img.onload = $.proxy(function () {
+            this._fullHeight = Number(img.height);
+            this._fullWidth = Number(img.width);
+            this._zoomOriginal();
+        }, this);
+        img.src = this._targetImage.src;
+    }
 
-  Zoom.prototype._zoomOriginal = function () {
-    this._targetImageWrap           = document.createElement('div')
-    this._targetImageWrap.className = 'zoom-img-wrap'
+    Zoom.prototype._zoomOriginal = function () {
+        this._targetImageWrap           = document.createElement('div');
+        this._targetImageWrap.className = 'zoom-img-wrap';
 
-    this._targetImage.parentNode.insertBefore(this._targetImageWrap, this._targetImage)
-    this._targetImageWrap.appendChild(this._targetImage)
+        this._targetImage.parentNode.insertBefore(this._targetImageWrap, this._targetImage);
+        this._targetImageWrap.appendChild(this._targetImage);
 
-    $(this._targetImage)
-      .addClass('zoom-img')
-      .attr('data-action', 'zoom-out')
+        $(this._targetImage)
+        .addClass('zoom-img') // apply css for active zoom image
+        .attr('data-action', 'zoom-out');
 
-    this._overlay           = document.createElement('div')
-    this._overlay.className = 'zoom-overlay'
+        this._overlay           = document.createElement('div');
+        this._overlay.className = 'zoom-overlay';
 
-    document.body.appendChild(this._overlay)
+        document.body.appendChild(this._overlay);
 
-    this._calculateZoom()
-    this._triggerAnimation()
-  }
+        this._calculateZoom();
+        this._triggerAnimation();
+    }
 
   Zoom.prototype._calculateZoom = function () {
     this._targetImage.offsetWidth // repaint before animating

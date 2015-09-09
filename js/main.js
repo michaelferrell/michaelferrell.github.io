@@ -35,16 +35,16 @@
     * The zoom service
     */
     function ZoomService () {
-        this._activeZoom            = null
-        this._initialScrollPosition = null
-        this._initialTouchPosition  = null
-        this._touchMoveListener     = null
+        this._activeZoom            = null;
+        this._initialScrollPosition = null;
+        this._initialTouchPosition  = null;
+        this._touchMoveListener     = null;
 
-        this._$document = $(document)
-        this._$window   = $(window)
-        this._$body     = $(document.body)
+        this._$document = $(document);
+        this._$window   = $(window);
+        this._$body     = $(document.body);
 
-        this._boundClick = $.proxy(this._clickHandler, this)
+        this._boundClick = $.proxy(this._clickHandler, this);
     }
 
   ZoomService.prototype.listen = function () {

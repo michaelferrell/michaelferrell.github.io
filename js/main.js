@@ -7,6 +7,7 @@
         this.art_work = [
             {'name': 'Graffiti Sunrise','src': 'images/graffiti_sunset.jpg', 'size': '12" X 24"'},
             {'name': 'Eruption','src': 'images/eruption.jpg', 'size': '12" X 24"'},
+            {'name': 'The Safe Route','src': 'images/the_safe_route.jpg', 'size': '12" X 24"'},
             {'name': 'Fierce River','src': 'images/violent_waterfall.jpg', 'size': '18" X 24"'},
             {'name': 'Core Temper','src': 'images/earths_shake.jpg', 'size': '12" X 24"'},
             {'name': 'R2-D2','src': 'images/robot.jpg', 'size': '9" X 14"'},

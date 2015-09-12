@@ -15,7 +15,6 @@
             {'name': 'Rough Day','src': 'images/busy_splatters.jpg', 'size': '18" X 24"'},
             {'name': 'Green Heavy','src': 'images/green_heavy.jpg', 'size': '12" X 24"'},
             {'name': 'Eddie Martinez Shoutout','src': 'images/eddie_martinez_shoutout.jpg', 'size': '11" X 14"'},
-            {'name': 'Thirsty Dog','src': 'images/hungry_dog.jpg', 'size': '12" X 16"'},
             {'name': 'Some Tulips','src': 'images/moms_flowers.jpg', 'size': '18" X 24"'}
         ];
     }

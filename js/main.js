@@ -12,10 +12,10 @@
             {'name': 'Fierce River','src': 'images/violent_waterfall.jpg', 'size': '18" X 24"'},
             {'name': 'Core Temper','src': 'images/earths_shake.jpg', 'size': '12" X 24"'},
             {'name': 'Slang For Movement','src': 'images/slang_for_movement.jpg', 'size': '11" X 14"'},
-            {'name': 'Rough Day','src': 'images/busy_splatters.jpg', 'size': '18" X 24"'},
-            {'name': 'Green Heavy','src': 'images/green_heavy.jpg', 'size': '12" X 24"'},
             {'name': 'Eddie Martinez Shoutout','src': 'images/eddie_martinez_shoutout.jpg', 'size': '11" X 14"'},
+            {'name': 'Green Heavy','src': 'images/green_heavy.jpg', 'size': '12" X 24"'},
             {'name': 'Some Tulips','src': 'images/moms_flowers.jpg', 'size': '18" X 24"'}
+            {'name': 'Rough Day','src': 'images/busy_splatters.jpg', 'size': '18" X 24"'},
         ];
     }
 

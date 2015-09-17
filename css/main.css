@@ -140,6 +140,11 @@ img {
     font-weight: 400;
     margin-left: 25px;
 }
+.status {
+    margin: 0;
+    font-size: 13px;
+    color: #383838;
+}
 @media(min-width: 1200px) {
     .container {
         width: 680px;

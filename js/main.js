@@ -5,19 +5,19 @@
     */
     function ArtWork () {
         this.art_work = [
-            {'name': 'Graffiti Sunrise','src': 'images/graffiti_sunset.jpg', 'size': '12" X 24"'},
-            {'name': 'Eruption','src': 'images/eruption.jpg', 'size': '12" X 24"'},
-            {'name': 'Shower of Hope','src': 'images/shower_of_hope.jpg', 'size': '12" X 24"'},
-            {'name': 'Infinity','src': 'images/infinity.jpg', 'size': '18" X 24"'},
-            {'name': 'Untitled','src': 'images/untitled.jpg', 'size': '16" X 20"'},
-            {'name': 'Core Temper','src': 'images/earths_shake.jpg', 'size': '12" X 24"'},
-            {'name': 'When The Colors Meet','src': 'images/when_the_colors_meet.jpg', 'size': '8" X 10"'},
-            {'name': 'Fierce River','src': 'images/violent_waterfall.jpg', 'size': '18" X 24"'},
-            {'name': 'Slang For Movement','src': 'images/slang_for_movement.jpg', 'size': '11" X 14"'},
-            {'name': 'Eddie Martinez Shoutout','src': 'images/eddie_martinez_shoutout.jpg', 'size': '11" X 14"'},
-            {'name': 'Green Heavy','src': 'images/green_heavy.jpg', 'size': '12" X 24"'},
-            {'name': 'Some Tulips','src': 'images/moms_flowers.jpg', 'size': '18" X 24"'},
-            {'name': 'Rough Day','src': 'images/busy_splatters.jpg', 'size': '18" X 24"'},
+            {'name': 'Graffiti Sunrise','src': 'images/graffiti_sunset.jpg', 'size': '12" X 24"', 'sold': 'Not for sale'},
+            {'name': 'Eruption','src': 'images/eruption.jpg', 'size': '12" X 24"', 'sold': ''},
+            {'name': 'Shower of Hope','src': 'images/shower_of_hope.jpg', 'size': '12" X 24"', 'sold': 'Sold'},
+            {'name': 'Infinity','src': 'images/infinity.jpg', 'size': '18" X 24"', 'sold': ''},
+            {'name': 'Untitled','src': 'images/untitled.jpg', 'size': '16" X 20"', 'sold': ''},
+            {'name': 'Core Temper','src': 'images/earths_shake.jpg', 'size': '12" X 24"', 'sold': ''},
+            {'name': 'When The Colors Meet','src': 'images/when_the_colors_meet.jpg', 'size': '8" X 10"', 'sold': ''},
+            {'name': 'Fierce River','src': 'images/violent_waterfall.jpg', 'size': '18" X 24"', 'sold': ''},
+            {'name': 'Slang For Movement','src': 'images/slang_for_movement.jpg', 'size': '11" X 14"', 'sold': 'Sold'},
+            {'name': 'Eddie Martinez Shoutout','src': 'images/eddie_martinez_shoutout.jpg', 'size': '11" X 14"', 'sold': ''},
+            {'name': 'Green Heavy','src': 'images/green_heavy.jpg', 'size': '12" X 24"', 'sold': ''},
+            {'name': 'Some Tulips','src': 'images/moms_flowers.jpg', 'size': '18" X 24"', 'sold': 'Sold'},
+            {'name': 'Rough Day','src': 'images/busy_splatters.jpg', 'size': '18" X 24"', 'sold': ''},
         ];
     }
 
@@ -29,6 +29,7 @@
                 +   '<img src="' + art_work.src + '" alt="' + art_work.name + '" />'
                 +   '<p class="piece-name">' + art_work.name + '</p>'
                 +   '<p class="piece-size">Size: ' + art_work.size + '</p>'
+                +   '<p class="status">' + art_work.sold + '</p>'
                 +   '</article>'
             );
         }

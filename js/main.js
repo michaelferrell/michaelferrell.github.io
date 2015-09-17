@@ -10,6 +10,7 @@
             {'name': 'Shower of Hope','src': 'images/shower_of_hope.jpg', 'size': '12" X 24"'},
             {'name': 'Infinity','src': 'images/infinity.jpg', 'size': '18" X 24"'},
             {'name': 'Core Temper','src': 'images/earths_shake.jpg', 'size': '12" X 24"'},
+            {'name': 'When The Colors Meet','src': 'images/when_the_colors_meet.jpg', 'size': '8" X 10"'},
             {'name': 'Fierce River','src': 'images/violent_waterfall.jpg', 'size': '18" X 24"'},
             {'name': 'Slang For Movement','src': 'images/slang_for_movement.jpg', 'size': '11" X 14"'},
             {'name': 'Eddie Martinez Shoutout','src': 'images/eddie_martinez_shoutout.jpg', 'size': '11" X 14"'},

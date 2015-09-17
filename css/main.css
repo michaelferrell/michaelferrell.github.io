@@ -142,8 +142,14 @@ img {
 }
 .status {
     margin: 0;
+    display: inline-block;
     font-size: 13px;
-    color: #383838;
+    color: #8693A5;
+    background-color: #F1F1F1;
+    border-radius: 3px;
+    padding: 0 4px;
+    margin-left: 15px;
+    font-weight: 400;
 }
 @media(min-width: 1200px) {
     .container {

@@ -9,7 +9,7 @@
             {'name': 'Eruption','src': 'images/eruption.jpg', 'size': '12" X 24"', 'sold': ''},
             {'name': 'Shower of Hope','src': 'images/shower_of_hope.jpg', 'size': '12" X 24"', 'sold': 'Sold'},
             {'name': 'Infinity','src': 'images/infinity.jpg', 'size': '18" X 24"', 'sold': ''},
-            {'name': 'Untitled','src': 'images/untitled.jpg', 'size': '16" X 20"', 'sold': ''},
+            {'name': 'Burnt Toast','src': 'images/untitled.jpg', 'size': '16" X 20"', 'sold': ''},
             {'name': 'Core Temper','src': 'images/earths_shake.jpg', 'size': '12" X 24"', 'sold': ''},
             {'name': 'When The Colors Meet','src': 'images/when_the_colors_meet.jpg', 'size': '8" X 10"', 'sold': ''},
             {'name': 'Fierce River','src': 'images/violent_waterfall.jpg', 'size': '18" X 24"', 'sold': ''},

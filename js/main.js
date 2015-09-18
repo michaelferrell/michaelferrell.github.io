@@ -13,6 +13,7 @@
             {'name': 'Core Temper','src': 'images/earths_shake.jpg', 'size': '12" X 24"', 'sold': ''},
             {'name': 'When The Colors Meet','src': 'images/when_the_colors_meet.jpg', 'size': '8" X 10"', 'sold': ''},
             {'name': 'Fierce River','src': 'images/violent_waterfall.jpg', 'size': '18" X 24"', 'sold': ''},
+            {'name': 'Slang','src': 'images/untitled_2.jpg', 'size': '11" X 14"', 'sold': ''},
             {'name': 'Slang For Movement','src': 'images/slang_for_movement.jpg', 'size': '11" X 14"', 'sold': 'Sold'},
             {'name': 'Eddie Martinez Shoutout','src': 'images/eddie_martinez_shoutout.jpg', 'size': '11" X 14"', 'sold': ''},
             {'name': 'Green Heavy','src': 'images/green_heavy.jpg', 'size': '12" X 24"', 'sold': ''},

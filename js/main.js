@@ -19,7 +19,6 @@
             {'name': 'Eddie Martinez Shoutout','src': 'images/eddie_martinez_shoutout.jpg', 'size': '11" X 14"', 'sold': ''},
             {'name': 'Green Heavy','src': 'images/green_heavy.jpg', 'size': '12" X 24"', 'sold': ''},
             {'name': 'Some Tulips','src': 'images/moms_flowers.jpg', 'size': '18" X 24"', 'sold': 'Sold'},
-            {'name': 'Rough Day','src': 'images/busy_splatters.jpg', 'size': '18" X 24"', 'sold': ''},
         ];
     }
 

@@ -116,11 +116,18 @@ img {
     font-weight: 300;
     margin-top: 7px;
 }
+#art {
+    margin-top: 20px;
+}
 .art-piece {
     margin-top: 35px;
     background-color: #fff;
     padding: 20px;
     border-radius: 3px;
+    transition: .7s all;
+}
+.art-piece:first-child {
+    margin-top: 0;
 }
 .art-piece img {
     margin-bottom: 15px;
@@ -242,4 +249,32 @@ img.zoom-img {
 .zoom-overlay-open,
 .zoom-overlay-transitioning {
   cursor: default;
+}
+
+.filter-menu {
+    margin: 30px 0 0 0;
+    padding: 0;
+}
+.filter-menu li {
+    display: inline-block;
+    margin-right: 6px;
+    background-color: #ddd;
+    color: #777;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-weight: 400;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .25s all;
+}
+.filter-menu li:hover {
+    background-color: #ccc;
+    color: #555;
+}
+.filter-menu li:last-child {
+    margin-right: 0;
+}
+.filter-menu li.active {
+    background-color: #7ad4ce;
+    color: #fff;
 }

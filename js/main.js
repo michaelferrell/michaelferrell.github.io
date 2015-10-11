@@ -18,7 +18,6 @@
             {'name': 'Slang','src': 'images/untitled_2.jpg', 'size': '11" X 14"', 'sold': 'sold', 'tag': 'slang'},
             {'name': 'Slang B','src': 'images/slang_contest.jpg', 'size': '12" X 16"', 'sold': '', 'tag': 'slang'},
             {'name': 'Slang For Movement','src': 'images/slang_for_movement.jpg', 'size': '11" X 14"', 'sold': 'Sold', 'tag': 'slang'},
-            {'name': 'Eddie Martinez Shoutout','src': 'images/eddie_martinez_shoutout.jpg', 'size': '11" X 14"', 'sold': '', 'tag': ''},
             {'name': 'Green Heavy','src': 'images/green_heavy.jpg', 'size': '12" X 24"', 'sold': '', 'tag': 'expressionism'},
         ];
     }

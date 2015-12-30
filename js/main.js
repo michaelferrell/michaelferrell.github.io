@@ -8,11 +8,12 @@
             {'name': 'Graffiti Sunrise','src': 'images/graffiti_sunset.jpg', 'size': '12" X 24"', 'sold': 'Not for sale', 'tag': 'expressionism'},
             {'name': 'Eruption','src': 'images/eruption.jpg', 'size': '12" X 24"', 'sold': '', 'tag': 'expressionism'},
             {'name': 'Shower of Hope','src': 'images/shower_of_hope.jpg', 'size': '12" X 24"', 'sold': 'Sold', 'tag': 'expressionism'},
+            {'name': 'Ocean Effect','src': 'images/ocean_effect.jpg', 'size': '18" X 24"', 'sold': '', 'tag': 'expressionism'},
             {'name': 'Infinity','src': 'images/infinity.jpg', 'size': '18" X 24"', 'sold': '', 'tag': 'expressionism'},
             {'name': 'Burnt Toast','src': 'images/untitled.jpg', 'size': '16" X 20"', 'sold': '', 'tag': 'expressionism'},
             {'name': 'Core Temper','src': 'images/earths_shake.jpg', 'size': '12" X 24"', 'sold': '', 'tag': 'expressionism'},
             {'name': 'When The Colors Meet','src': 'images/when_the_colors_meet.jpg', 'size': '8" X 10"', 'sold': '', 'tag': 'expressionism'},
-            {'name': 'Color in the Streets','src': 'images/color_streets.jpg', 'size': '12" X 24"', 'sold': '', 'tag': 'expressionism'},
+            {'name': 'Color in the Streets','src': 'images/color_streets.jpg', 'size': '12" X 24"', 'sold': 'Sold', 'tag': 'expressionism'},
             {'name': 'Untitled','src': 'images/untitled_4.jpg', 'size': '12" X 24"', 'sold': '', 'tag': 'expressionism'},
             {'name': 'Fierce River','src': 'images/violent_waterfall.jpg', 'size': '18" X 24"', 'sold': '', 'tag': 'expressionism'},
             {'name': 'Green Heavy','src': 'images/green_heavy.jpg', 'size': '12" X 24"', 'sold': '', 'tag': 'expressionism'},
@@ -49,7 +50,7 @@
 
     ArtWork.prototype.listenForFilter = function(tag) {
         var _this = this;
-        
+
         $('.apply-filter').on('click', function() {
             if ($(this).hasClass('active')) return;
 
@@ -60,7 +61,7 @@
             var filtered = _this.applyFilter(tag);
             _this.append(filtered);
         });
-        
+
     }
 
     ArtWork.prototype.init = function() {
@@ -131,7 +132,7 @@
   ZoomService.prototype._activeZoomClose = function (forceDispose) {
     if (!this._activeZoom) return; // is null - cant close if we are in the process of zooming in!
 
-    if (forceDispose) { 
+    if (forceDispose) {
       this._activeZoom.dispose();
     } else { // forceDispose is undefined when closing
       this._activeZoom.close();

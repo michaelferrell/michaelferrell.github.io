@@ -9,6 +9,7 @@
             {'name': 'Eruption','src': 'images/eruption.jpg', 'size': '12" X 24"', 'sold': '', 'tag': 'expressionism'},
             {'name': 'Ocean Effect','src': 'images/ocean_effect.jpg', 'size': '18" X 24"', 'sold': '', 'tag': 'expressionism'},
             {'name': 'Color in the Streets','src': 'images/color_streets.jpg', 'size': '12" X 24"', 'sold': 'Sold', 'tag': 'expressionism'},
+            {'name': 'Untitled','src': 'images/untitled_5.jpg', 'size': '18" X 24"', 'sold': '', 'tag': 'expressionism'},
             {'name': 'Infinity','src': 'images/infinity.jpg', 'size': '18" X 24"', 'sold': '', 'tag': 'expressionism'},
             {'name': 'Burnt Toast','src': 'images/untitled.jpg', 'size': '16" X 20"', 'sold': '', 'tag': 'expressionism'},
             {'name': 'When The Colors Meet','src': 'images/when_the_colors_meet.jpg', 'size': '8" X 10"', 'sold': '', 'tag': 'expressionism'},

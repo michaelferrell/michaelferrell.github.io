@@ -25,6 +25,9 @@
         ];
     }
 
+    /**
+    * The html template for each art piece
+    */
     ArtWork.prototype.template = function(art_work) {
         return '<article class="art-piece" data-action="zoom">'
         +   '<img src="' + art_work.src + '" alt="' + art_work.name + '" />'
@@ -34,6 +37,9 @@
         +   '</article>';
     }
 
+    /**
+    * Appends the provided art work to the page
+    */
     ArtWork.prototype.append = function(art_work) {
         $('#art').html(''); // remove previous results
         for (var i = 0; i < art_work.length; i++) {
@@ -42,6 +48,9 @@
         }
     }
 
+    /**
+    * Uses the selected art tag name to filter out the art pieces
+    */
     ArtWork.prototype.applyFilter = function(tag) {
         var all_work = this.all_work;
         return all_work.filter(function(elem, index, arr) {
@@ -49,6 +58,9 @@
         });
     }
 
+    /**
+    * Waits for the user to click a filter
+    */
     ArtWork.prototype.listenForFilter = function(tag) {
         var _this = this;
 
@@ -65,6 +77,9 @@
 
     }
 
+    /**
+    * Initializes the event listeners and appends all art work on page load
+    */
     ArtWork.prototype.init = function() {
         this.append(this.all_work);
         this.listenForFilter();

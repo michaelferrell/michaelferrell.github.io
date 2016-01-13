@@ -104,7 +104,6 @@ img {
 }
 .title-prim {
     font-size: 2.5rem;
-    color: #7ad4ce;
     color: #868686;
     font-weight: 700;
     margin-bottom: 0;
@@ -290,8 +289,8 @@ img.zoom-img {
     border-radius: 22px;
     font-weight: 400;
     font-size: 13px;
-    cursor: pointer;
     text-transform: uppercase;
+    cursor: pointer;
     transition: .25s all;
 }
 .filter-menu li:hover {

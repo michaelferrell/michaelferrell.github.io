@@ -77,7 +77,8 @@ body {
 }
 footer {
     background-color: #69DB91;
-    padding: 30px 0;
+    padding: 10px 0;
+    border-top: 10px solid #F4A1C4;
     text-align: center;
 }
 footer p {

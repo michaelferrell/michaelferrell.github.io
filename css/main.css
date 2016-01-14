@@ -70,7 +70,7 @@ img {
 /* main */
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Bitter', serif;
     background-color: #1D1E1F;
     font-size: 16px;
     color: #E4E4E4;
@@ -170,15 +170,16 @@ img {
 }
 .piece-size {
     display: inline-block;
-    color: #383838;
+    font-family: 'Open Sans', sans-serif;
     color: #ddd;
     font-size: .95rem;
     font-weight: 400;
     margin-left: 25px;
 }
 .status {
-    margin: 0;
     display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
     font-size: 12px;
     color: #111;
     background-color: #ddd;
@@ -283,6 +284,7 @@ img.zoom-img {
 }
 .filter-menu li {
     display: inline-block;
+    font-family: 'Open Sans', sans-serif;
     margin-right: 6px;
     color: #ddd;
     border: 1px solid #ddd;

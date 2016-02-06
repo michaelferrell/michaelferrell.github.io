@@ -104,9 +104,9 @@ img {
     text-align: center;
 }
 .title-prim {
-    font-size: 2.5rem;
-    color: #868686;
-    font-weight: 700;
+    font-size: 2.2rem;
+    color: #B0976D;
+    font-weight: 300;
     margin-bottom: 0;
 }
 .title-sec {
@@ -116,7 +116,7 @@ img {
     display: inline-block;
     background-color: rgba(122, 212, 206, .3);
     background-color: #404040;
-    padding: 2px 10px;
+    padding: 2px 5px;
     border-radius: 3px;
     margin-top: 10px;
 }
@@ -125,9 +125,9 @@ img {
     height: 110px;
     border-radius: 100%;
     overflow: hidden;
-    border: 15px solid #F4A1C4;
-    border-left: 15px solid #69DB91;
-    border-top: 15px solid #69DB91;
+    border: 10px solid #fff;
+    border-left: 10px solid #B0976D;
+    border-top: 10px solid #B0976D;
     margin: 0 auto;
     transition: .3s all;
 }
@@ -163,7 +163,7 @@ img {
 .piece-name {
     display: inline-block;
     font-size: 1.2rem;
-    color: #69DB91;
+    color: #B0976D;
     border-left: 5px solid #fff;
     padding-left: 8px;
     margin-bottom: 0;
@@ -297,15 +297,15 @@ img.zoom-img {
     transition: .25s all;
 }
 .filter-menu li:hover {
-    background-color: #F4A1C4;
+    background-color: #B0976D;
     color: #fff;
-    border-color: #F4A1C4;
+    border-color: #B0976D;
 }
 .filter-menu li:last-child {
     margin-right: 0;
 }
 .filter-menu li.active {
     color: #fff;
-    background-color: #69DB91;
-    border-color: #53AD73;
+    background-color: #B0976D;
+    border-color: #B0976D;
 }

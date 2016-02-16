@@ -213,6 +213,7 @@ img {
     opacity: .7;
     font-weight: 400;
     margin-top: 30px;
+    text-align: center;
 }
 .bg-black .heading-secondary {
     color: #fff;

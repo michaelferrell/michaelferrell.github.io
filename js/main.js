@@ -1,6 +1,23 @@
 +function ($) { "use strict";
 
     /**
+    * Portfolio constructor
+    */
+    function Portfolio () {}
+
+    Portfolio.prototype.init = function() {
+      this.showServiceDescription();
+    }
+
+    Portfolio.prototype.showServiceDescription = function() {
+      $('.service-list li ').hover(function() {
+        $(this).children('.service-description').removeClass('hide').addClass('show');
+      }, function() {
+        $(this).children('.service-description').removeClass('show').addClass('hide');
+      });
+    }
+
+    /**
     * List of art projects
     */
     function ArtWork () {
@@ -329,6 +346,7 @@
   $(function () {
     new ArtWork().init();
     new ZoomService().listen();
+    new Portfolio().init();
   });
 
 }(jQuery)

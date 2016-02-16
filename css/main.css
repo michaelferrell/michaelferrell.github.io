@@ -78,6 +78,12 @@ img {
 .bg-black {
     background-color: #1D1E1F;
 }
+.show {
+    display: block !important;
+}
+.hide {
+    display: none !important;
+}
 
 /* main */
 
@@ -94,16 +100,6 @@ ul, h1, h2, h3, h4, article {
 h1, h2, h3, h4 {
     font-family: 'Lora', serif;
     line-height: 1;
-}
-footer {
-    background-color: #69DB91;
-    padding: 10px 0;
-    border-top: 10px solid #F4A1C4;
-    text-align: center;
-}
-footer p {
-    color: #fff;
-    font-weight: 400;
 }
 p {
     font-size: 1rem;
@@ -239,21 +235,37 @@ img {
     font-size: 1.1rem;
     float: left;
     width: 285px;
-    height: 18px;
     margin-left: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
+    padding: 4px 0;
     line-height: 1;
     border-left: 2px solid rgba(176, 151, 109, .3);
     padding-left: 15px;
+    transition: .2s all;
+}
+.service-list li:hover {
+    background-color: rgba(176, 151, 109, .1);
+    border-color: rgba(176, 151, 109, .9);
+    color: #000;
+    opacity: 1;
+}
+.service-description {
+    display: none;
+    margin-top: 10px;
+    opacity: .65;
+    line-height: 1.8rem;
+    padding: 5px 8px;
+    font-size: 1rem;
 }
 .art-box {
     width: 48%;
     height: auto;
     float: left;
-    margin-top: 2%;
     box-sizing: border-box;
-    border: 1px solid #313131;
+    margin-top: 2%;
     padding: 5px;
+    text-align: center;
+    border: 1px solid #313131;
     transition: .3s all;
 }
 .art-box:nth-child(odd) {
@@ -266,6 +278,12 @@ img {
     width: 100%;
     display: block;
 }
+.art-title {
+    display: inline-block;
+    font-family: 'Lora', serif;
+    margin-top: 15px;
+    opacity: .25;
+}
 @media(max-width: 480px) {
     .art-box {
         width: 100%;
@@ -273,4 +291,16 @@ img {
     .art-box:nth-child(odd) {
         margin-left: 0;
     }
+}
+.footer {
+    width: 100%;
+    padding: 80px 0;
+    background-color: #fff;
+    text-align: center;
+    float: left;
+}
+.footer-copy {
+    color: #0C0C0C;
+    opacity: .8;
+    font-size: 1.1rem;
 }

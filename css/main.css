@@ -303,6 +303,30 @@ img {
     font-weight: 300;
 }
 @media(max-width: 480px) {
+    .heading {
+        font-size: 1.7rem;
+        line-height: 2.8rem;
+        margin-top: 25px;
+    }
+    .heading-secondary {
+        font-size: 1.4rem;
+        line-height: 2.3rem;
+        margin-top: 20px;
+    }
+    .service-list li {
+        font-family: 'Open Sans', sans-serif;
+        list-style: none;
+        color: #0C0C0C;
+        opacity: .7;
+        font-size: 1.1rem;
+        font-weight: 300;
+        float: left;
+        width: 100%;
+        margin-left: 15px;
+        margin-top: 3px;
+        line-height: 1;
+        padding-left: 0px;
+    }
     .art-box {
         width: 100%;
     }

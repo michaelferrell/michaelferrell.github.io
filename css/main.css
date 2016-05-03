@@ -309,6 +309,10 @@ img {
 /* Mobile
   ======================== */
 @media(max-width: 480px) {
+    .hero-bg,
+    .hero-overlay {
+        height: 600px;
+    }
     .heading {
         font-size: 1.7rem;
         line-height: 2.8rem;

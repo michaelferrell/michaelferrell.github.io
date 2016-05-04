@@ -85,10 +85,11 @@ img {
 .hide {
     display: none !important;
 }
-/*<!-- <div class="full-width bg-white" style="background:rgba(95, 92, 59,1)"> -->
-<!-- <div class="full-width bg-white" style="background:rgb(125, 188, 169)"> -->
-<div class="full-width bg-white" style="background:rgba(255,155,109,1)">
-<!-- <div class="full-width bg-white" style="background:rgb(234, 253, 137)"> -->*/
+/*  color: rgba(95, 92, 59,1);
+    color: rgb(125, 188, 169);
+    color: rgba(255,155,109,1);
+    color: rgb(234, 253, 137); */
+
 /* Main
  ======================== */
 body {
@@ -180,7 +181,7 @@ img {
     height: 700px;
     background: rgba(255,255,255,.7);
     background-image:  url('../images/stripes-white.png');
-    opacity: .7;
+    opacity: .6;
     position: absolute;
     top: 0;
     left: 0;
@@ -276,6 +277,50 @@ img {
     padding: 5px 8px;
     font-size: 1rem;
 }
+.company-link {
+    color: rgba(95, 92, 59,1);
+}
+.project-section {
+    margin-top: 15px;
+}
+.project-section .project-name {
+    color: rgba(95, 92, 59,1);
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-top: 27px;
+}
+.project-section .project-description {
+    color: #000;
+    opacity: .5;
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+.project-section .project-link {
+    display: inline-block;
+    color: rgba(95, 92, 59, .8);
+    background-color: rgba(95, 92, 59, .05);
+    font-size: 1rem;
+    font-weight: 300;
+    border: 1px solid rgba(95, 92, 59, .05);
+    padding: 3px 10px;
+    text-transform: uppercase;
+}
+.project-section .project-link:hover {
+    color: rgba(95, 92, 59, .9);
+    background-color: rgba(95, 92, 59, .15);
+}
+.instagram {
+    margin-top: 20px;
+}
+.instagram img {
+    width: 22.2%;
+    float: left;
+    margin: 1%;
+    border: 2px solid #fff;
+    transition: .25s all;
+}
 .art-section {
     background-image:  url('../images/stripes.png');
     background-image:  url('../images/stripes-white.png');
@@ -349,6 +394,13 @@ img {
     }
     .art-box:nth-child(odd) {
         margin-left: 0;
+    }
+    .instagram img {
+        width: 47%;
+        float: left;
+        margin: 1%;
+        border: 2px solid #fff;
+        transition: .25s all;
     }
 }
 .footer {

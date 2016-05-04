@@ -399,7 +399,7 @@ img {
         width: 47%;
         float: left;
         margin: 1%;
-        border: 2px solid #fff;
+        border: 1px solid #fff;
         transition: .25s all;
     }
 }

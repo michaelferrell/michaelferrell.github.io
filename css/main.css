@@ -251,7 +251,7 @@ img {
 .service-list li {
     font-family: 'Open Sans', sans-serif;
     list-style: none;
-    color: #FFF869;
+    color: #fff !important;
     font-size: 1.1rem;
     font-weight: 300;
     float: left;

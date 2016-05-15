@@ -99,7 +99,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     background-color: #fff;
     font-size: 16px;
-    color: #E4E4E4;
+    color: #000;
 }
 ul, h1, h2, h3, h4, article {
     margin: 0;
@@ -296,12 +296,12 @@ img {
 }
 .project-section .project-link {
     display: inline-block;
-    color: rgba(95, 92, 59, .8);
+    color: #000;
     background-color: rgba(95, 92, 59, .05);
     font-size: 1rem;
     font-weight: 300;
-    border: 1px solid rgba(95, 92, 59, .05);
-    padding: 3px 10px;
+    border: 1px solid rgba(0,0,0,.4);
+    padding: 6px 14px;
     text-transform: uppercase;
 }
 .project-section .project-link:hover {

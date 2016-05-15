@@ -243,7 +243,6 @@ img {
     letter-spacing: 1px;
     font-weight: 600;
     color: #fff;
-    opacity: .65;
     margin-top: 45px;
 }
 .service-list {
@@ -252,7 +251,7 @@ img {
 .service-list li {
     font-family: 'Open Sans', sans-serif;
     list-style: none;
-    color: #fff;
+    color: #FFF869;
     font-size: 1.1rem;
     font-weight: 300;
     float: left;

@@ -76,6 +76,9 @@ img {
 .bg-white {
     background-color: #fff;
 }
+.bg-red {
+    background-color: #da0024;
+}
 .bg-black {
     background-color: #1D1E1F;
 }
@@ -179,9 +182,14 @@ img {
 .hero-overlay {
     width: 100%;
     height: 700px;
-    background: rgba(255,255,255,.7);
-    background-image:  url('../images/stripes-white.png');
-    opacity: .6;
+    background: #da0024;
+    background-image: -webkit-gradient(linear,left bottom,right top,color-stop(0%,#CCC42B),color-stop(100%,#da0024));
+    background-image: -webkit-linear-gradient(45deg,#CCC42B 0,#da0024 100%);
+    background-image: -moz-linear-gradient(45deg,#CCC42B 0,#da0024 100%);
+    background-image: -ms-linear-gradient(45deg,#CCC42B 0,#da0024 100%);
+    background-image: -o-linear-gradient(45deg,#CCC42B 0,#da0024 100%);
+    background-image: linear-gradient(45deg,#FFF869 -1%,#da0024 100%);
+    opacity: .7;
     position: absolute;
     top: 0;
     left: 0;
@@ -197,15 +205,15 @@ img {
 .hero-heading {
     font-size: 3rem;
     line-height: 3.5rem;
-    color: #000;
-    opacity: .7;
+    color: #fff;
+    opacity: .99;
     font-weight: 300;
     margin-top: 150px;
 }
 .hero-subheading {
     font-size: 2rem;
-    color: #000;
-    opacity: .5;
+    color: #fff;
+    opacity: .99;
     font-weight: 300;
     margin-top: 10px;
 }
@@ -213,29 +221,21 @@ img {
     font-size: 2.5rem;
     line-height: 3.6rem;
     color: #0C0C0C;
-    opacity: .6;
     font-weight: 300;
     margin: 0 auto;
     margin-top: 25px;
-}
-.bg-white .heading {
-    color: #000;
-    color: #864141;
-    color: #442F1E;
-    opacity: .8;
 }
 .heading-secondary {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.6rem;
     line-height: 2.6rem;
     color: #000;
-    opacity: .5;
     font-weight: 300;
     margin-top: 30px;
 }
-.bg-white .heading-secondary {
-    color: #442F1E;
-    opacity: .6;
+.bg-red .heading,
+.bg-red .heading-secondary {
+    color: #fff;
 }
 .service-title {
     font-family: 'Open Sans', sans-serif;
@@ -243,7 +243,7 @@ img {
     letter-spacing: 1px;
     font-weight: 600;
     color: #fff;
-    opacity: .4;
+    opacity: .65;
     margin-top: 45px;
 }
 .service-list {
@@ -252,8 +252,7 @@ img {
 .service-list li {
     font-family: 'Open Sans', sans-serif;
     list-style: none;
-    color: #0C0C0C;
-    opacity: .7;
+    color: #fff;
     font-size: 1.1rem;
     font-weight: 300;
     float: left;
@@ -284,14 +283,13 @@ img {
     margin-top: 15px;
 }
 .project-section .project-name {
-    color: rgba(95, 92, 59,1);
-    font-weight: 300;
+    color: #000;
+    font-weight: 400;
     font-size: 1.5rem;
     margin-top: 27px;
 }
 .project-section .project-description {
     color: #000;
-    opacity: .5;
     font-weight: 300;
     font-size: 1.2rem;
     margin-top: 12px;
@@ -321,19 +319,13 @@ img {
     border: 2px solid #fff;
     transition: .25s all;
 }
-.art-section {
-    background-image:  url('../images/stripes.png');
-    background-image:  url('../images/stripes-white.png');
-}
 .art-box {
     width: 48%;
     height: auto;
     float: left;
     box-sizing: border-box;
-    background-color: #f8f8f8;
     margin-top: 2%;
     padding: 10px;
-    text-align: center;
     transition: .3s all;
 }
 .art-box:nth-child(odd) {
@@ -347,7 +339,6 @@ img {
     display: inline-block;
     margin-top: 15px;
     color: #0C0C0C;
-    opacity: .4;
     font-size: 1.2rem;
     font-weight: 300;
 }
@@ -406,13 +397,12 @@ img {
 .footer {
     width: 100%;
     padding: 80px 0;
-    background-color: rgb(255,155,109);
+    background-color: #da0024;
     text-align: center;
     float: left;
 }
 .footer-copy {
-    color: #000;
-    opacity: .5;
+    color: #fff;
     line-height: 1rem;
     font-size: 1.2rem;
     font-weight: 300;

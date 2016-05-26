@@ -325,28 +325,23 @@ img {
     transition: .25s all;
 }
 .art-box {
-    width: 48%;
-    width: 100%;
-    height: auto;
-    float: left;
     box-sizing: border-box;
     margin-top: 2%;
     padding: 10px;
     transition: .3s all;
-}
-.art-box:nth-child(odd) {
-    margin-left: 2%;
 }
 .art-piece {
     width: 100%;
     display: block;
 }
 .art-title {
-    display: inline-block;
+    display: block;
     margin-top: 15px;
+    padding-bottom: 10px;
     color: #0C0C0C;
     font-size: 1.2rem;
     font-weight: 300;
+    border-bottom: 2px solid #eee;
 }
 /* Mobile
   ======================== */

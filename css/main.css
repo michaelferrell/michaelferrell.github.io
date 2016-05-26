@@ -213,9 +213,9 @@ img {
 }
 .hero-heading {
     font-size: 3rem;
-    line-height: 3.5rem;
+    line-height: 3.9rem;
     color: #fff;
-    opacity: .99;
+    opacity: .85;
     font-weight: 300;
     margin-top: 150px;
 }
@@ -302,6 +302,7 @@ img {
     font-size: 1.2rem;
     margin-top: 12px;
     margin-bottom: 10px;
+    display: inline-block;
 }
 .project-section .project-link {
     display: inline-block;
@@ -312,10 +313,6 @@ img {
     border: 1px solid rgba(0,0,0,.4);
     padding: 6px 14px;
     text-transform: uppercase;
-}
-.project-section .project-link:hover {
-    color: rgba(95, 92, 59, .9);
-    background-color: rgba(95, 92, 59, .15);
 }
 .instagram {
     margin-top: 20px;
@@ -329,6 +326,7 @@ img {
 }
 .art-box {
     width: 48%;
+    width: 100%;
     height: auto;
     float: left;
     box-sizing: border-box;

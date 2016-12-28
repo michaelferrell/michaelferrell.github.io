@@ -355,6 +355,9 @@ img {
 .instagram {
     margin-top: 20px;
 }
+.instagram-placeholder a {
+    cursor: default;
+}
 .instagram img {
     width: 22.2%;
     float: left;

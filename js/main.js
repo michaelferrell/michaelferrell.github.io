@@ -353,6 +353,10 @@
       accessToken: '218149027.2358389.d2f2f14fef694c7fa3db5241526d52ef',
       image_size: 'standard_resolution'
     });
+
+    $(document).on('click', '.instagram-placeholder a', function(ev) {
+      ev.preventDefault();
+    });
   });
 
 }(jQuery)
